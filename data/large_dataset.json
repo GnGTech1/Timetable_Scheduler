@@ -1,0 +1,198 @@
+{
+  "name": "Large Dataset",
+  "time_structure": {
+    "working_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "periods_per_day": 7,
+    "break_periods": [4]
+  },
+  "rooms": [
+    {"name": "Room 201", "capacity": 60, "type": "classroom"},
+    {"name": "Room 202", "capacity": 60, "type": "classroom"},
+    {"name": "Room 203", "capacity": 55, "type": "classroom"},
+    {"name": "Room 204", "capacity": 50, "type": "classroom"},
+    {"name": "Room 205", "capacity": 50, "type": "classroom"},
+    {"name": "Room 206", "capacity": 45, "type": "classroom"},
+    {"name": "Room 207", "capacity": 45, "type": "classroom"},
+    {"name": "Software Lab 1", "capacity": 60, "type": "lab"},
+    {"name": "Software Lab 2", "capacity": 55, "type": "lab"},
+    {"name": "Hardware Lab", "capacity": 50, "type": "lab"}
+  ],
+  "teachers": [
+    {"name": "Prof. T01_Sharma", "subjects": ["MATH201", "STAT201"], "unavailable_slots": [["Monday", 1], ["Wednesday", 7]], "max_weekly_load": 18, "preferences": {"avoid_first_period": true}},
+    {"name": "Prof. T02_Verma", "subjects": ["PHYS201", "ELEC201"], "unavailable_slots": [["Friday", 6], ["Friday", 7]], "max_weekly_load": 18, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T03_Gupta", "subjects": ["CS201", "CS201_LAB", "OS201"], "unavailable_slots": [["Tuesday", 2]], "max_weekly_load": 20, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T04_Mehta", "subjects": ["DS201", "DS201_LAB", "ALGO201"], "unavailable_slots": [["Thursday", 7]], "max_weekly_load": 20, "preferences": {"avoid_first_period": true}},
+    {"name": "Prof. T05_Iyer", "subjects": ["ENG201", "COMM201"], "unavailable_slots": [["Monday", 7]], "max_weekly_load": 16, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T06_Nair", "subjects": ["CHEM201", "ENV201"], "unavailable_slots": [["Wednesday", 1]], "max_weekly_load": 16, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T07_Reddy", "subjects": ["DBMS201", "DBMS201_LAB", "WEB201"], "unavailable_slots": [["Tuesday", 7]], "max_weekly_load": 20, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T08_Patel", "subjects": ["NET201", "NET201_LAB", "SEC201"], "unavailable_slots": [["Friday", 1]], "max_weekly_load": 18, "preferences": {"avoid_first_period": true}},
+    {"name": "Prof. T09_Singh", "subjects": ["AI201", "AI201_LAB", "ML201"], "unavailable_slots": [["Thursday", 1]], "max_weekly_load": 18, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T10_Das", "subjects": ["MATH201", "DISC201"], "unavailable_slots": [["Monday", 2]], "max_weekly_load": 18, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T11_Joshi", "subjects": ["CA201", "MIC201", "MIC201_LAB"], "unavailable_slots": [["Wednesday", 6]], "max_weekly_load": 18, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T12_Bose", "subjects": ["SE201", "OOPS201", "OOPS201_LAB"], "unavailable_slots": [["Friday", 2]], "max_weekly_load": 18, "preferences": {"avoid_first_period": true}},
+    {"name": "Prof. T13_Menon", "subjects": ["THERMO201", "MECH201"], "unavailable_slots": [["Tuesday", 1]], "max_weekly_load": 16, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T14_Kulkarni", "subjects": ["SIG201", "COMM_SYS201"], "unavailable_slots": [["Thursday", 6]], "max_weekly_load": 16, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T15_Chopra", "subjects": ["EMBED201", "EMBED201_LAB"], "unavailable_slots": [["Monday", 6]], "max_weekly_load": 16, "preferences": {"avoid_first_period": false}},
+    {"name": "Prof. T16_Saxena", "subjects": ["CLOUD201", "DEVOPS201"], "unavailable_slots": [["Tuesday", 6]], "max_weekly_load": 16, "preferences": {"avoid_first_period": true}}
+  ],
+  "subjects": [
+    {"code": "MATH201", "name": "Discrete Mathematics", "weekly_hours": 4, "type": "theory"},
+    {"code": "STAT201", "name": "Probability & Statistics", "weekly_hours": 3, "type": "theory"},
+    {"code": "PHYS201", "name": "Applied Physics", "weekly_hours": 3, "type": "theory"},
+    {"code": "CS201", "name": "Data Structures & C++", "weekly_hours": 4, "type": "theory"},
+    {"code": "CS201_LAB", "name": "Data Structures Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "OS201", "name": "Operating Systems", "weekly_hours": 3, "type": "theory"},
+    {"code": "DS201", "name": "Advanced Data Structures", "weekly_hours": 4, "type": "theory"},
+    {"code": "DS201_LAB", "name": "ADS Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "ALGO201", "name": "Design & Analysis of Algorithms", "weekly_hours": 4, "type": "theory"},
+    {"code": "DBMS201", "name": "Database Systems", "weekly_hours": 4, "type": "theory"},
+    {"code": "DBMS201_LAB", "name": "Database Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "NET201", "name": "Computer Networks", "weekly_hours": 4, "type": "theory"},
+    {"code": "NET201_LAB", "name": "Networks Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "AI201", "name": "Artificial Intelligence", "weekly_hours": 4, "type": "theory"},
+    {"code": "AI201_LAB", "name": "AI Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "CA201", "name": "Computer Architecture", "weekly_hours": 3, "type": "theory"},
+    {"code": "MIC201", "name": "Microprocessors", "weekly_hours": 3, "type": "theory"},
+    {"code": "MIC201_LAB", "name": "Microprocessors Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "OOPS201", "name": "Object Oriented Programming", "weekly_hours": 4, "type": "theory"},
+    {"code": "OOPS201_LAB", "name": "OOP Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "ENG201", "name": "Technical Communication", "weekly_hours": 3, "type": "theory"},
+    {"code": "ENV201", "name": "Environmental Studies", "weekly_hours": 2, "type": "theory"},
+    {"code": "SIG201", "name": "Signals and Systems", "weekly_hours": 4, "type": "theory"},
+    {"code": "THERMO201", "name": "Thermodynamics", "weekly_hours": 4, "type": "theory"},
+    {"code": "MECH201", "name": "Fluid Mechanics", "weekly_hours": 4, "type": "theory"},
+    {"code": "EMBED201", "name": "Embedded Systems", "weekly_hours": 3, "type": "theory"},
+    {"code": "EMBED201_LAB", "name": "Embedded Systems Lab", "weekly_hours": 2, "type": "lab"},
+    {"code": "CLOUD201", "name": "Cloud Computing", "weekly_hours": 3, "type": "theory"}
+  ],
+  "classes": [
+    {
+      "name": "Class CS-2A",
+      "strength": 55,
+      "lunch_break_slot": 4,
+      "subjects": ["MATH201", "CS201", "CS201_LAB", "DBMS201", "DBMS201_LAB", "CA201", "ENG201", "ENV201"],
+      "subject_teacher_map": {
+        "MATH201": "Prof. T01_Sharma",
+        "CS201": "Prof. T03_Gupta",
+        "CS201_LAB": "Prof. T03_Gupta",
+        "DBMS201": "Prof. T07_Reddy",
+        "DBMS201_LAB": "Prof. T07_Reddy",
+        "CA201": "Prof. T11_Joshi",
+        "ENG201": "Prof. T05_Iyer",
+        "ENV201": "Prof. T06_Nair"
+      }
+    },
+    {
+      "name": "Class CS-2B",
+      "strength": 52,
+      "lunch_break_slot": 4,
+      "subjects": ["MATH201", "DS201", "DS201_LAB", "OS201", "OOPS201", "OOPS201_LAB", "ENG201", "ENV201"],
+      "subject_teacher_map": {
+        "MATH201": "Prof. T10_Das",
+        "DS201": "Prof. T04_Mehta",
+        "DS201_LAB": "Prof. T04_Mehta",
+        "OS201": "Prof. T03_Gupta",
+        "OOPS201": "Prof. T12_Bose",
+        "OOPS201_LAB": "Prof. T12_Bose",
+        "ENG201": "Prof. T05_Iyer",
+        "ENV201": "Prof. T06_Nair"
+      }
+    },
+    {
+      "name": "Class CS-2C",
+      "strength": 48,
+      "lunch_break_slot": 4,
+      "subjects": ["STAT201", "ALGO201", "DBMS201", "DBMS201_LAB", "AI201", "AI201_LAB", "CA201", "CLOUD201"],
+      "subject_teacher_map": {
+        "STAT201": "Prof. T01_Sharma",
+        "ALGO201": "Prof. T04_Mehta",
+        "DBMS201": "Prof. T07_Reddy",
+        "DBMS201_LAB": "Prof. T07_Reddy",
+        "AI201": "Prof. T09_Singh",
+        "AI201_LAB": "Prof. T09_Singh",
+        "CA201": "Prof. T11_Joshi",
+        "CLOUD201": "Prof. T16_Saxena"
+      }
+    },
+    {
+      "name": "Class IT-2A",
+      "strength": 50,
+      "lunch_break_slot": 4,
+      "subjects": ["MATH201", "NET201", "NET201_LAB", "OS201", "OOPS201", "OOPS201_LAB", "CLOUD201", "ENG201"],
+      "subject_teacher_map": {
+        "MATH201": "Prof. T01_Sharma",
+        "NET201": "Prof. T08_Patel",
+        "NET201_LAB": "Prof. T08_Patel",
+        "OS201": "Prof. T03_Gupta",
+        "OOPS201": "Prof. T12_Bose",
+        "OOPS201_LAB": "Prof. T12_Bose",
+        "CLOUD201": "Prof. T16_Saxena",
+        "ENG201": "Prof. T05_Iyer"
+      }
+    },
+    {
+      "name": "Class IT-2B",
+      "strength": 45,
+      "lunch_break_slot": 4,
+      "subjects": ["STAT201", "NET201", "NET201_LAB", "AI201", "AI201_LAB", "DBMS201", "DBMS201_LAB", "CLOUD201"],
+      "subject_teacher_map": {
+        "STAT201": "Prof. T01_Sharma",
+        "NET201": "Prof. T08_Patel",
+        "NET201_LAB": "Prof. T08_Patel",
+        "AI201": "Prof. T09_Singh",
+        "AI201_LAB": "Prof. T09_Singh",
+        "DBMS201": "Prof. T07_Reddy",
+        "DBMS201_LAB": "Prof. T07_Reddy",
+        "CLOUD201": "Prof. T16_Saxena"
+      }
+    },
+    {
+      "name": "Class ECE-2A",
+      "strength": 42,
+      "lunch_break_slot": 4,
+      "subjects": ["PHYS201", "SIG201", "MIC201", "MIC201_LAB", "CA201", "MATH201", "EMBED201", "EMBED201_LAB"],
+      "subject_teacher_map": {
+        "PHYS201": "Prof. T02_Verma",
+        "SIG201": "Prof. T14_Kulkarni",
+        "MIC201": "Prof. T11_Joshi",
+        "MIC201_LAB": "Prof. T11_Joshi",
+        "CA201": "Prof. T11_Joshi",
+        "MATH201": "Prof. T10_Das",
+        "EMBED201": "Prof. T15_Chopra",
+        "EMBED201_LAB": "Prof. T15_Chopra"
+      }
+    },
+    {
+      "name": "Class ECE-2B",
+      "strength": 40,
+      "lunch_break_slot": 4,
+      "subjects": ["PHYS201", "SIG201", "MIC201", "MIC201_LAB", "EMBED201", "EMBED201_LAB", "CS201", "CS201_LAB"],
+      "subject_teacher_map": {
+        "PHYS201": "Prof. T02_Verma",
+        "SIG201": "Prof. T14_Kulkarni",
+        "MIC201": "Prof. T11_Joshi",
+        "MIC201_LAB": "Prof. T11_Joshi",
+        "EMBED201": "Prof. T15_Chopra",
+        "EMBED201_LAB": "Prof. T15_Chopra",
+        "CS201": "Prof. T03_Gupta",
+        "CS201_LAB": "Prof. T03_Gupta"
+      }
+    },
+    {
+      "name": "Class MECH-2A",
+      "strength": 45,
+      "lunch_break_slot": 4,
+      "subjects": ["MATH201", "PHYS201", "THERMO201", "MECH201", "ENG201", "ENV201", "MIC201", "MIC201_LAB"],
+      "subject_teacher_map": {
+        "MATH201": "Prof. T10_Das",
+        "PHYS201": "Prof. T02_Verma",
+        "THERMO201": "Prof. T13_Menon",
+        "MECH201": "Prof. T13_Menon",
+        "ENG201": "Prof. T05_Iyer",
+        "ENV201": "Prof. T06_Nair",
+        "MIC201": "Prof. T11_Joshi",
+        "MIC201_LAB": "Prof. T11_Joshi"
+      }
+    }
+  ]
+}

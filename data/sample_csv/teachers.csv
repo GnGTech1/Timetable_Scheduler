@@ -1,0 +1,7 @@
+name,subjects,unavailable_slots,max_weekly_load,avoid_first_period
+Prof. Alan,"MATH101,STAT101","Monday:1;Wednesday:6",18,True
+Prof. Beatrice,"PHYS101,ELEC101","Friday:5;Friday:6",18,False
+Prof. Charles,"CS101,CS101_LAB,PY101","Tuesday:2",18,False
+Prof. Diana,"DS101,DS101_LAB,ALGO101,ALGO101_LAB","Thursday:6",18,True
+Prof. Edward,"ENG101,COMM101","Monday:6",18,False
+Prof. Fiona,"CHEM101,ENV101,PY101","Wednesday:1",18,False

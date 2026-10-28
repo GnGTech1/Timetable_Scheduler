@@ -1,0 +1,119 @@
+{
+  "name": "Small Dataset",
+  "time_structure": {
+    "working_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "periods_per_day": 6,
+    "break_periods": [4]
+  },
+  "rooms": [
+    {"name": "Room 101", "capacity": 40, "type": "classroom"},
+    {"name": "Room 102", "capacity": 40, "type": "classroom"},
+    {"name": "Room 103", "capacity": 30, "type": "classroom"},
+    {"name": "Lab 1", "capacity": 40, "type": "lab"}
+  ],
+  "teachers": [
+    {
+      "name": "Prof. Alan",
+      "subjects": ["MATH101", "STAT101"],
+      "unavailable_slots": [["Monday", 1], ["Wednesday", 6]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": true}
+    },
+    {
+      "name": "Prof. Beatrice",
+      "subjects": ["PHYS101", "ELEC101"],
+      "unavailable_slots": [["Friday", 5], ["Friday", 6]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": false}
+    },
+    {
+      "name": "Prof. Charles",
+      "subjects": ["CS101", "CS101_LAB", "PY101"],
+      "unavailable_slots": [["Tuesday", 2]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": false}
+    },
+    {
+      "name": "Prof. Diana",
+      "subjects": ["DS101", "DS101_LAB", "ALGO101", "ALGO101_LAB"],
+      "unavailable_slots": [["Thursday", 6]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": true}
+    },
+    {
+      "name": "Prof. Edward",
+      "subjects": ["ENG101", "COMM101"],
+      "unavailable_slots": [["Monday", 6]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": false}
+    },
+    {
+      "name": "Prof. Fiona",
+      "subjects": ["CHEM101", "ENV101", "PY101"],
+      "unavailable_slots": [["Wednesday", 1]],
+      "max_weekly_load": 18,
+      "preferences": {"avoid_first_period": false}
+    }
+  ],
+  "subjects": [
+    {"code": "MATH101", "name": "Mathematics I", "weekly_hours": 4, "type": "theory"},
+    {"code": "STAT101", "name": "Applied Statistics", "weekly_hours": 3, "type": "theory"},
+    {"code": "PHYS101", "name": "Physics", "weekly_hours": 3, "type": "theory"},
+    {"code": "ELEC101", "name": "Basic Electronics", "weekly_hours": 3, "type": "theory"},
+    {"code": "CS101", "name": "Computer Programming", "weekly_hours": 3, "type": "theory"},
+    {"code": "CS101_LAB", "name": "Programming Lab", "weekly_hours": 4, "type": "lab"},
+    {"code": "PY101", "name": "Python Fundamentals", "weekly_hours": 4, "type": "theory"},
+    {"code": "DS101", "name": "Data Structures", "weekly_hours": 3, "type": "theory"},
+    {"code": "DS101_LAB", "name": "Data Structures Lab", "weekly_hours": 4, "type": "lab"},
+    {"code": "ALGO101", "name": "Algorithms Design", "weekly_hours": 4, "type": "theory"},
+    {"code": "ALGO101_LAB", "name": "Algorithms Lab", "weekly_hours": 4, "type": "lab"},
+    {"code": "CHEM101", "name": "Engineering Chemistry", "weekly_hours": 3, "type": "theory"},
+    {"code": "ENV101", "name": "Environmental Science", "weekly_hours": 3, "type": "theory"},
+    {"code": "ENG101", "name": "Professional English", "weekly_hours": 3, "type": "theory"},
+    {"code": "COMM101", "name": "Communication Skills", "weekly_hours": 3, "type": "theory"}
+  ],
+  "classes": [
+    {
+      "name": "Class CS-A",
+      "strength": 35,
+      "lunch_break_slot": 4,
+      "subjects": ["MATH101", "PHYS101", "CS101", "CS101_LAB", "ENG101", "ENV101"],
+      "subject_teacher_map": {
+        "MATH101": "Prof. Alan",
+        "PHYS101": "Prof. Beatrice",
+        "CS101": "Prof. Charles",
+        "CS101_LAB": "Prof. Charles",
+        "ENG101": "Prof. Edward",
+        "ENV101": "Prof. Fiona"
+      }
+    },
+    {
+      "name": "Class CS-B",
+      "strength": 38,
+      "lunch_break_slot": 4,
+      "subjects": ["PY101", "DS101", "DS101_LAB", "COMM101", "ELEC101", "PHYS101"],
+      "subject_teacher_map": {
+        "PY101": "Prof. Fiona",
+        "DS101": "Prof. Diana",
+        "DS101_LAB": "Prof. Diana",
+        "COMM101": "Prof. Edward",
+        "ELEC101": "Prof. Beatrice",
+        "PHYS101": "Prof. Beatrice"
+      }
+    },
+    {
+      "name": "Class CS-C",
+      "strength": 28,
+      "lunch_break_slot": 4,
+      "subjects": ["ALGO101", "ALGO101_LAB", "CHEM101", "ENG101", "STAT101", "CS101"],
+      "subject_teacher_map": {
+        "ALGO101": "Prof. Diana",
+        "ALGO101_LAB": "Prof. Diana",
+        "CHEM101": "Prof. Fiona",
+        "ENG101": "Prof. Edward",
+        "STAT101": "Prof. Alan",
+        "CS101": "Prof. Charles"
+      }
+    }
+  ]
+}

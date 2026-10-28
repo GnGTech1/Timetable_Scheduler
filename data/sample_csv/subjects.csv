@@ -1,0 +1,16 @@
+code,name,weekly_hours,type
+MATH101,Mathematics I,4,theory
+STAT101,Applied Statistics,3,theory
+PHYS101,Physics,4,theory
+ELEC101,Basic Electronics,3,theory
+CS101,Computer Programming,3,theory
+CS101_LAB,Programming Lab,4,lab
+PY101,Python Fundamentals,4,theory
+DS101,Data Structures,4,theory
+DS101_LAB,Data Structures Lab,4,lab
+ALGO101,Algorithms Design,4,theory
+ALGO101_LAB,Algorithms Lab,4,lab
+CHEM101,Engineering Chemistry,4,theory
+ENV101,Environmental Science,3,theory
+ENG101,Professional English,3,theory
+COMM101,Communication Skills,3,theory

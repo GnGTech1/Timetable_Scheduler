@@ -1,0 +1,44 @@
+{
+  "name": "Tiny Dataset",
+  "time_structure": {
+    "working_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "periods_per_day": 4,
+    "break_periods": [3]
+  },
+  "rooms": [
+    {"name": "Room 1", "capacity": 30, "type": "classroom"},
+    {"name": "Lab 1", "capacity": 30, "type": "lab"}
+  ],
+  "teachers": [
+    {
+      "name": "Prof. Alice",
+      "subjects": ["MATH101"],
+      "unavailable_slots": [["Monday", 1]],
+      "max_weekly_load": 10,
+      "preferences": {"avoid_first_period": true}
+    },
+    {
+      "name": "Prof. Bob",
+      "subjects": ["CS_LAB"],
+      "unavailable_slots": [],
+      "max_weekly_load": 10,
+      "preferences": {"avoid_first_period": false}
+    }
+  ],
+  "subjects": [
+    {"code": "MATH101", "name": "Mathematics", "weekly_hours": 3, "type": "theory"},
+    {"code": "CS_LAB", "name": "Computer Lab", "weekly_hours": 2, "type": "lab"}
+  ],
+  "classes": [
+    {
+      "name": "Class Alpha",
+      "strength": 25,
+      "lunch_break_slot": 3,
+      "subjects": ["MATH101", "CS_LAB"],
+      "subject_teacher_map": {
+        "MATH101": "Prof. Alice",
+        "CS_LAB": "Prof. Bob"
+      }
+    }
+  ]
+}

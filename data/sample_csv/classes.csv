@@ -1,0 +1,4 @@
+name,strength,lunch_break_slot,subjects,teacher_mapping
+Class CS-A,35,4,"MATH101,PHYS101,CS101,CS101_LAB,ENG101,ENV101,STAT101","MATH101:Prof. Alan;PHYS101:Prof. Beatrice;CS101:Prof. Charles;CS101_LAB:Prof. Charles;ENG101:Prof. Edward;ENV101:Prof. Fiona;STAT101:Prof. Alan"
+Class CS-B,38,4,"PY101,DS101,DS101_LAB,COMM101,ELEC101,PHYS101,MATH101","PY101:Prof. Fiona;DS101:Prof. Diana;DS101_LAB:Prof. Diana;COMM101:Prof. Edward;ELEC101:Prof. Beatrice;PHYS101:Prof. Beatrice;MATH101:Prof. Alan"
+Class CS-C,28,4,"ALGO101,ALGO101_LAB,CHEM101,ENG101,STAT101,CS101,PY101","ALGO101:Prof. Diana;ALGO101_LAB:Prof. Diana;CHEM101:Prof. Fiona;ENG101:Prof. Edward;STAT101:Prof. Alan;CS101:Prof. Charles;PY101:Prof. Charles"
